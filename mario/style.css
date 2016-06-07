@@ -46,6 +46,18 @@ html, body{
     animation-name: driver;
     animation-duration: 3s;
     animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0,.77,1,.28);
+}
+.luigi{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation-name: driver;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
  
 
@@ -53,10 +65,10 @@ html, body{
 
 @keyframes driver{
     from{ 
-        transform: translateX(200px);
+        transform: translateX(-200px);
     }
     to{
-         transform: translateX(700px);
+         transform: translateX(1000px);
     }
 }
 
