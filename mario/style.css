@@ -6,21 +6,21 @@ html, body{
   margin: 0;
 }
 
-.grass, .sky, .road{
+.grama, .ceu, .rua{
   position: relative;
 }
 
-.sky{
+.ceu{
   height: 40%;
   background: skyblue;
 }
 
-.grass{
+.grama{
   height: 30%;
   background: seagreen;
 }
 
-.road{
+.rua{
   height: 30%;
   background: dimgrey;
   box-sizing: border-box;
@@ -29,7 +29,7 @@ html, body{
   width: 100%;
 }
 
-.lines{
+.linhas{
   box-sizing: border-box;
   border: 5px dashed #fff;
   height: 0px;
@@ -39,6 +39,7 @@ html, body{
 }
 
 /* =============== ELEMENTOS DA ANIMAÇÂO============= */
+/*animation-timing-function: cubic-bezier(0,.77,1,.28);*/
 .mario{
     position: absolute; 
     top: -40px;
@@ -47,7 +48,7 @@ html, body{
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0,.77,1,.28);
+    animation-timing-function: linear;
 }
 .luigi{
     position: absolute;
@@ -58,6 +59,20 @@ html, body{
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: normal;
+}
+.nuvem{
+   position: absolute; 
+}
+.nuvem:nth-child(1){
+    width: 200px;
+    top: 120px;
+     opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+.nuvem:nth-child(2){
+    width: 300px;
+    top: 0;
+    animation: wind 50s linear infinite reverse;
 }
  
 
@@ -72,6 +87,14 @@ html, body{
     }
 }
 
+@keyframes wind{
+    from{
+       left: -300px; 
+    }
+    to{
+       left: 100%; 
+    }
+}
 
 
 
