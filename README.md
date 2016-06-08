@@ -1,6 +1,6 @@
 # CSS Animation
 <p align="center">
-  <img src="/readme/15h0cr.jpg">
+  <img src="/readme/fundo.jpg">
 </p>
 
 ##Algumas  animações em css.
